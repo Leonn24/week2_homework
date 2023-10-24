@@ -10,6 +10,12 @@ body {
     color:#ffffff;
 }
 
+section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+
+}
+
 header {
     position: fixed;
     top: 0;
@@ -22,6 +28,8 @@ header {
     align-items: center;
     z-index: 100;
 }
+
+
 
 .navbar a {
 font-size: 26px;
@@ -37,30 +45,35 @@ transition: 1s;
     color: #081b29;
 }
 
-.home {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 0px 12%;
+
+.content-home img {
+    position: absolute;
+    z-index: -1;
+    top: 500px;
+    right: 1375px;
+    opacity: 60%;
+
 
 }
 
 
-.discription-home h1 {
+.content-home h1 {
     font-size: 56px;
     font-weight: 700;
-    line-height: 1.2;
+    margin: auto;
+
+
+   
+
 }
 
-.discription-home h3 {
+.content-home h3 {
     font-size: 30px;
     font-weight: 700;
 
 }
 
-.discription-home p {
+.content-home p {
     font-size: 20px;
     
 }
