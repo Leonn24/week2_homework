@@ -1,118 +1,188 @@
 * {
-    padding: 0;
-    margin: 0;
+    margin: 0px;
+    padding: 0px;
     box-sizing: border-box;
+    font-family: 'poppin' sans-serif;
 }
 
-
-
-.container {
-    height: 100vh;
+#navdiv {
     width: 100%;
-    position: relative;
-    background-color: rgb(4, 4, 108);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(254, 254, 254) 100%);
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    min-height: 50px;
+    background-color: rgb(17, 9, 75);
+    text-align: center;
+    line-height: 50px;
+    margin-bottom: 10px;
+    
 
+
+}
+
+#navdiv li {
+    display: inline-block;
+    justify-content: space-evenly;
+    padding: 10px;
+
+
+}
+
+#navdiv a {
+    color: white;
+    text-decoration: none;
+    font-size: 32px;
+    transition: 0.3s;
     
 
 }
 
-.container .box {
-    height: 86vh;
-    width: 75%;
-    padding: 0 20px;
-    background-color: rgb(4, 4, 108);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgb(254, 254, 254) 100%);
-    z-index: 10;
-    border: 2px solid #ffffff;
-    border-radius: 20px;    
-    display: flex;
-    backdrop-filter: blur(25px);
+#navdiv a:hover {
+    color: rgb(12, 206, 232)
 
 }
 
-.container nav {
-    height: 7%;
-    width: 90%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between; 
-    margin: 15px auto;
-    padding: 20px;
-
-}
-
-.container .logo {
-    font-size: 45px;
-    font-weight: 700;
-    text-decoration: none;
+#section1 {
+    width: 100%;
+    min-height: 100px;
+    background-color: rgb(17, 9, 75);
+    text-align: center;
+    line-height: 100px;
     color: white;
-    margin-left: 30px;
-
-
-}
-
-.container nav ul li {
-    display: inline-block;
-    padding: 0 20px;
+    
+    
+    
 
 }
 
-.container nav ul li a {
-    text-decoration: none;
-    font-size: 30px;
-    color: white;
-    transition: 0.3s;
-
-
+p {
+    text-align: center;
+    font-size: 18px;
+    
 }
 
-.container nav ul li a:hover{
-    color: black;
 
+#about-me {
+    width: 80%;
+    background-color: rgb(17, 9, 75);
+    float: right;
+    
+   
 }
 
-.about {
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-width: 100%;
-margin-top: 8%;
-padding-left: 80px;
-
+#sidebar {
+    width: 20%;
+    min-height: 570px;
+    background-color: rgb(17, 9, 75);
+    float: left;
+    border: solid white 1px;
+    
+    
 }
 
-.about .section1 {
-    position: relative;
-    width: 40%;
 
 
-
+#section1 img {
+    width: 200px;
+    border: solid 2px white;
+    border-radius: 50%;
 }
 
-.about .section1 h1 {
-  margin-bottom: 20px;
-  font-size: 50px;
-  font-weight: 700;
-  color: white;
- 
-}
 
-.about .section1 h3 {
-    font-size: 35px;
-    color: white;
+
+#main {
+    height: 100%;
     margin-bottom: 10px;
+    
+
 }
 
-.about .section1 p {
-    font-size: 20px;
+#sidebar-div {
+    width: 20%;
+    min-height: 511px;
+    background-color: rgb(17, 9, 75);
+    float: left;
     color: white;
-    margin-bottom: 50px;
+    text-align: center;
+    font-size: 26px;
+    border: solid white 1px;
+}
+
+#project-div {
+    width: 80%;
+    min-height: 510px;
+    background-color: rgb(17, 9, 75);
+    float: right;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+
+}
+
+.project-1, .project-2, .project-3, .project-4 {
+    width: 35%;
+    min-height: 100px;
+    border: solid 1px white;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 25px;
+    
+}
+
+.project-1{
+    background: url(images/Horiseon.png);
+    background-size: cover;
+}
+
+.project-2 {
+    background: url(images/Group.png);
+    background-size: cover;
+}
+
+.project-1 a, .project-2 a, .project-3, .project-4 {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(17, 9, 75);
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+#footer-div {
+    height: 100%;
+    min-height: 50px;
+    background-color: rgb(17, 9, 75);
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    
+    
+    
+
+}
+
+.icons-nav {
+    margin: auto;
+    display: inline-block;
+    justify-content: center;
+    
+}
+
+#github, #email {
+    width: 50px;
+    height: 25px;
+    
+    
+    
+    
+    
+    
+}
+
+
+
+#wrapper-div {
+    width: 100%;
+
 }
